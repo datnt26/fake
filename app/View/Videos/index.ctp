@@ -1,6 +1,6 @@
-<div class="container py-2">
+<div class="container-fluid py-2">
   <div class="row">
-    <div class="col-md-3 d-none d-sm-none d-md-block" >
+    <div class="col-md-3">
       <ul class="list-group text-dark">
         <li class="list-group-item font-weight-bold"><i class="fa fa-home fa-fw pr-4"></i><a href="./" class="text-dark">Trang chủ</a></li>
         <li class="list-group-item"><i class="fa fa-fire fa-fw pr-4"></i><a href="./content.php?cont=trending" class="text-dark">Trending</a></li>
@@ -10,7 +10,7 @@
         <li class="list-group-item"><i class="fa fa-file-code-o fa-fw pr-4 pr-4"></i><a href="./content.php?cont=api" class="text-dark">API</a></li>
       </ul>
     </div>
-    <div class="col-md-9 " nopadding>
+    <div class="col-md-9">
       <div class="col-md-12 pb-3 d-none d-sm-none d-md-block" style="background: url(./img/homebg.jpg) no-repeat;background-size: cover;background-position: center -80px;text-align: center;"> 
         <h3 class="pt-5 pb-2 text-white"></h3>
         <form>
@@ -31,7 +31,7 @@
         <ul class="list-unstyled video-list-thumbs row pt-1">
           <?php $data = array("1","2","3","2","3","2","3","2","3","2","3","2");?>
           <?php foreach( $data as $value ): ?>
-            <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4" ><a href="#" class="hhh" >
+            <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ><a href="./videos/view" class="hhh" >
               <img src="http://heroes.blizzplanet.com/wp-content/uploads/2017/01/Screenshot2017-01-05-21_52_09-210x118.jpg" class=" img-responsive" /><p class="fa play kkk" ></p>
               <span class="text-dark text-overflow font2 my-2" title="">TÁO QUÂN 2016 | TÁO KINH TẾ VÀO CHẦU</span></a>
               <div class="pull-left pull-left1 icontext">
