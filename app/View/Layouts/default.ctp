@@ -26,11 +26,16 @@
 			echo $this->Html->css('inc/theme');
 			echo $this->Html->css('inc/iconfont');
 
+			echo $this->Html->script('demo');
+
 			echo $this->fetch('meta');
 			echo $this->fetch('css');
 			echo $this->fetch('script');
 		?>
 		<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+
+		<link rel="stylesheet" href="https://cdn.plyr.io/3.3.12/plyr.css">
+		<script src="https://cdn.plyr.io/3.3.12/plyr.js"></script>
 	</head>
 	<body>
 		<div id="header">
