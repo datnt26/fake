@@ -11,7 +11,7 @@
       </ul>
     </div>
     <div class="col-md-9">
-      <div class="col-md-12 pb-3 d-none d-sm-none d-md-block" style="background: url(./img/homebg.jpg) no-repeat;background-size: cover;background-position: center -80px;text-align: center;"> 
+      <div class="col-md-12 pb-3 d-none d-sm-none d-md-block" style="background: url(/dramadaily/img/homebg.jpg) no-repeat;background-size: cover;background-position: center -80px;text-align: center;"> 
         <h3 class="pt-5 pb-2 text-white"></h3>
         <form>
           <div class="form-group" >
@@ -29,11 +29,10 @@
       </div>
       <div id="videocontent" class="videocontentrow">
         <ul class="list-unstyled video-list-thumbs row pt-1">
-          <?php $data = array("1","2","3","2","3","2","3","2","3","2","3","2");?>
           <?php foreach( $data as $value ): ?>
-            <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ><a href="./videos/view" class="hhh" >
-              <img src="http://heroes.blizzplanet.com/wp-content/uploads/2017/01/Screenshot2017-01-05-21_52_09-210x118.jpg" class=" img-responsive" /><p class="fa play kkk" ></p>
-              <span class="text-dark text-overflow font2 my-2" title="">TÁO QUÂN 2016 | TÁO KINH TẾ VÀO CHẦU</span></a>
+            <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3" ><a href= <?php echo "/dramadaily/videos/view/" . $value['Video']['id'] ?> class="hhh" >
+              <img src= <?php echo $value['Video']['thumbnail'] ?> class=" img-responsive" /><p class="fa play kkk" ></p>
+              <span class="text-dark text-overflow font2 my-2" title=""><?php echo $value['Video']['title']?></span></a>
               <div class="pull-left pull-left1 icontext">
                 <i class="fa fa-user icoys"></i>
                 <span class="pl-1">
